@@ -16,5 +16,10 @@ namespace LINQ.Entities
             Email = email;
             Salario = salario;
         }
+        public override string ToString()
+        {
+            return Nome + ", " + Email + ", R$ " + Salario.ToString("F2");
+
+        }
     }
 }
